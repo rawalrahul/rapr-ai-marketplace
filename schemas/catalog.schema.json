@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/rawalrahul/rapr-ai-marketplace/main/schemas/catalog.schema.json",
+  "title": "RAPR AI Marketplace Catalog",
+  "type": "object",
+  "required": ["version", "updated_at", "base_download_url", "items"],
+  "properties": {
+    "version": { "type": "integer" },
+    "updated_at": { "type": "string" },
+    "base_download_url": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "name",
+          "description",
+          "long_description",
+          "category",
+          "author",
+          "version",
+          "github_url",
+          "tags",
+          "marketplace_kind",
+          "license"
+        ],
+        "properties": {
+          "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "long_description": { "type": "string" },
+          "category": { "type": "string", "enum": ["skill", "integration"] },
+          "marketplace_kind": {
+            "type": "string",
+            "enum": ["RAPR Skill", "Curated Public Repo", "CLI Connector", "OAuth Connector", "Built-in Integration"]
+          },
+          "purpose_category": { "type": "string" },
+          "author": { "type": "string" },
+          "version": { "type": "string" },
+          "github_url": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "featured": { "type": "boolean" },
+          "download_url": { "type": ["string", "null"] },
+          "file_size": { "type": ["string", "null"] },
+          "pricing": { "type": "string" },
+          "pricing_note": { "type": "string" },
+          "license": { "type": "string" },
+          "upstream_license": { "type": "string" },
+          "license_scope": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
+
