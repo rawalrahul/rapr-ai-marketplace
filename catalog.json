@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-06-01",
+  "updated_at": "2026-06-02",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -48,8 +48,8 @@
       },
       "purpose_category": "Agent Workflows",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "scrapling",
@@ -1136,7 +1136,7 @@
       "long_description": "# Code Review\n\nAutomated code review — analyses diffs, checks style, suggests improvements, and explains changes in plain English.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install code-review`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Anthropic",
       "version": "1.1.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -1178,8 +1178,8 @@
       },
       "purpose_category": "Coding & Code Quality",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "security-review",
@@ -1224,8 +1224,8 @@
       },
       "purpose_category": "Security & Compliance",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "simplify",
@@ -1270,8 +1270,8 @@
       },
       "purpose_category": "Coding & Code Quality",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "graphify",
@@ -1280,7 +1280,7 @@
       "long_description": "# Graphify\n\nTurn code, docs, papers, and media into clustered knowledge graphs with HTML and JSON outputs.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install graphify`.",
       "category": "skill",
       "emoji": "???",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -1316,8 +1316,8 @@
       },
       "purpose_category": "Productivity & Knowledge Work",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "plugin-dev",
@@ -1362,8 +1362,8 @@
       },
       "purpose_category": "Coding & Code Quality",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "frontend-design",
@@ -1408,8 +1408,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "impeccable",
@@ -1418,7 +1418,7 @@
       "long_description": "# Impeccable\n\nCritique, redesign, polish, and harden frontend interfaces with senior UX judgment.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install impeccable`.",
       "category": "skill",
       "emoji": "?",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -1454,8 +1454,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "redesign-existing-projects",
@@ -1464,7 +1464,7 @@
       "long_description": "# Redesign Existing Projects\n\nUpgrade existing websites and apps to premium quality without breaking functionality.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install redesign-existing-projects`.",
       "category": "skill",
       "emoji": "???",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -1500,8 +1500,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "high-end-visual-design",
@@ -1510,7 +1510,7 @@
       "long_description": "# High-End Visual Design\n\nAgency-quality visual design standards for premium websites and product interfaces.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install high-end-visual-design`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -1546,8 +1546,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "image-to-code",
@@ -1556,7 +1556,7 @@
       "long_description": "# Image to Code\n\nTurn visual references and screenshots into implementation-ready website code.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install image-to-code`.",
       "category": "skill",
       "emoji": "???",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -1592,8 +1592,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "gitlab-cli",
@@ -3783,7 +3783,7 @@
       "long_description": "# Seedance 2.0\n\nAI video generation and scene direction workflows for Seedance 2.0.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install seedance-20`.",
       "category": "skill",
       "emoji": "???",
-      "author": "RAPR AI",
+      "author": "ByteDance",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -3819,8 +3819,8 @@
       },
       "purpose_category": "Content, Docs & Media",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "docker-cli",
@@ -5289,7 +5289,7 @@
       "long_description": "# Brandkit\n\nCreate premium brand systems, identity boards, logo concepts, and visual guidelines.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install brandkit`.",
       "category": "skill",
       "emoji": "???",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5325,8 +5325,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "design-taste-frontend",
@@ -5335,7 +5335,7 @@
       "long_description": "# Design Taste Frontend\n\nSenior UI/UX engineering taste for strict component architecture and polished interfaces.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install design-taste-frontend`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5371,8 +5371,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "gpt-taste",
@@ -5381,7 +5381,7 @@
       "long_description": "# GPT Taste\n\nElite UX/UI and GSAP motion engineering for polished frontend experiences.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install gpt-taste`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5417,8 +5417,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "huashu-design",
@@ -5490,7 +5490,7 @@
       "long_description": "# Imagegen Frontend Web\n\nGenerate premium web UI image direction for implementation-friendly design references.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install imagegen-frontend-web`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5526,8 +5526,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "imagegen-frontend-mobile",
@@ -5536,7 +5536,7 @@
       "long_description": "# Imagegen Frontend Mobile\n\nGenerate premium mobile app screen concepts and consistent product flows.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install imagegen-frontend-mobile`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5572,8 +5572,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "industrial-brutalist-ui",
@@ -5582,7 +5582,7 @@
       "long_description": "# Industrial Brutalist UI\n\nRaw mechanical interfaces inspired by Swiss print systems and military terminals.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install industrial-brutalist-ui`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5618,8 +5618,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "minimalist-ui",
@@ -5628,7 +5628,7 @@
       "long_description": "# Minimalist UI\n\nClean editorial interfaces with restrained typography, spacing, and warm monochrome systems.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install minimalist-ui`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5664,8 +5664,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "stitch-design-taste",
@@ -5674,7 +5674,7 @@
       "long_description": "# Stitch Design Taste\n\nGenerate semantic design-system guidance for premium Google Stitch interfaces.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install stitch-design-taste`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5710,8 +5710,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "caveman",
@@ -5720,7 +5720,7 @@
       "long_description": "# Caveman Mode\n\nUltra-compressed technical communication mode with commit, review, and help sub-skills.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install caveman`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5756,8 +5756,8 @@
       },
       "purpose_category": "Productivity & Knowledge Work",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "full-output-enforcement",
@@ -5766,7 +5766,7 @@
       "long_description": "# Full Output Enforcement\n\nPrevent truncated or placeholder-heavy responses when exhaustive output is required.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install full-output-enforcement`.",
       "category": "skill",
       "emoji": "??",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -5802,8 +5802,8 @@
       },
       "purpose_category": "Productivity & Knowledge Work",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "claude-code-setup",
@@ -5848,8 +5848,8 @@
       },
       "purpose_category": "Coding & Code Quality",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "claude-md-management",
@@ -5894,8 +5894,8 @@
       },
       "purpose_category": "Coding & Code Quality",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "ralph-loop",
@@ -5940,8 +5940,8 @@
       },
       "purpose_category": "Agent Workflows",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "ruflo",
@@ -6010,7 +6010,7 @@
       "long_description": "# Web Search\n\nGive local AI models the ability to search the web. This skill is specifically for AIs that don't have built-in search — like Ollama, NemoClaw, and other local/sandboxed models.\n\n**Note:** Cloud AIs (Claude, Gemini, Codex) already have native web search built in. They don't need this skill.\n\n## What you can do\n\n- **Search**: Query DuckDuckGo, Brave, or Google from the command line\n- **News**: Get current events and recent information\n- **Weather**: Check weather for any location\n- **Docs**: Look up documentation and technical references\n- **Facts**: Quick answers to factual questions\n\n## Prerequisites\n\nNo API key needed — uses DuckDuckGo by default (free, no sign-up).\n\nOptionally, get a free Brave Search API key at [brave.com/search/api](https://brave.com/search/api/) for better results.\n\n## Example Commands\n\n- \"Search for the latest AI news\"\n- \"What's the weather in Delhi?\"\n- \"Look up Next.js app router documentation\"\n- \"Find the current population of India\"",
       "category": "skill",
       "emoji": "🔍",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/RAPR-AI-Website",
@@ -6045,8 +6045,8 @@
       },
       "purpose_category": "Research & Web Intelligence",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "cli-anything",
@@ -6432,7 +6432,7 @@
       "author": "RAPR AI",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
-      "github_url": "https://github.com/rawalrahul/rapr-ai-website",
+      "github_url": "https://github.com/rawalrahul/viral-shorts-skill",
       "tags": [
         "video",
         "shorts",
@@ -6444,7 +6444,7 @@
       "pricing": "free",
       "pricing_note": "Free & Open Source",
       "created_at": "2026-05-30",
-      "updated_at": "2026-05-30",
+      "updated_at": "2026-06-02",
       "download_url": "/marketplace/packages/viral-shorts-1.0.0.raprpkg",
       "file_size": "68.4 KB",
       "keywords": [
@@ -6497,8 +6497,8 @@
       },
       "purpose_category": "Content, Docs & Media",
       "license": "MIT",
-      "marketplace_kind": "CLI Connector",
-      "license_scope": "This package contains RAPR-authored CLI usage guidance, install commands, and agent instructions. It does not bundle the upstream CLI binary."
+      "marketplace_kind": "RAPR Skill",
+      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, setup metadata, and bundled assets."
     },
     {
       "slug": "markitdown",
@@ -6627,7 +6627,7 @@
       "long_description": "# Bumblebee\n\nBumblebee is a read-only environment security scanner developed by Perplexity. It inventories local package metadata, extensions, and configurations, enabling developer security audits without executing untrusted code.\n\n## What you can do\n\n- **Read-Only Scans**: Safely query package metadata and dev configurations without running untrusted scripts.\n- **Dependency Auditing**: Extract details of packages from files like `package.json`, `requirements.txt`, or local global package lists.\n- **Risk Identification**: Prepare structured summaries of dev tools, plugins, and dependencies for security analysis.\n\n## Installation\n\nInstall using the marketplace install button or run `rapr install bumblebee`.",
       "category": "skill",
       "emoji": "🐝",
-      "author": "Perplexity / RAPR AI",
+      "author": "Perplexity",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -6668,8 +6668,8 @@
       },
       "purpose_category": "Security & Compliance",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "yapsnap",
@@ -6678,7 +6678,7 @@
       "long_description": "# YapSnap\n\nYapSnap is a local, CPU-only transcription tool designed to extract plain text from online media (YouTube, TikTok, X, Instagram, etc.). It works fully offline, requires no GPU, cloud dependency, or API keys.\n\n## What you can do\n\n- **Offline Transcription**: Transcribe video/audio to text locally.\n- **Multi-Platform Support**: Fetch and process audio links from YouTube, TikTok, Instagram, and X.\n- **Privacy First**: Process audio streams locally with lightweight models, keeping your content private.\n\n## Installation\n\nInstall using the marketplace install button or run `rapr install yapsnap`.",
       "category": "skill",
       "emoji": "🎙️",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -6722,8 +6722,8 @@
       },
       "purpose_category": "Content, Docs & Media",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "sandcastle",
@@ -6783,7 +6783,7 @@
       "long_description": "# Headroom\n\nHeadroom is a context-optimization and compression proxy for AI agents. It intelligently compresses verbose console logs, long histories, and tool outputs before they reach the LLM, significantly reducing token consumption while maintaining the ability to retrieve the original data on demand.\n\n## What you can do\n\n- **Context Compression**: Compress terminal outputs, logs, and tracebacks automatically.\n- **Token Optimization**: Prevent out-of-context errors and lower API costs during long agent runs.\n- **Reversible Reconstruction**: Restore original uncompressed logs when detailed inspection is needed.\n\n## Installation\n\nInstall using the marketplace install button or run `rapr install headroom`.",
       "category": "skill",
       "emoji": "🗜️",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -6824,8 +6824,8 @@
       },
       "purpose_category": "Agent Workflows",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "bughunter",
@@ -6834,7 +6834,7 @@
       "long_description": "# BugHunter\n\nBugHunter is a cybersecurity-focused skill bundle designed to turn AI coding agents into security auditors. It provides tools for reconnaissance, vulnerability scanning, perimeter analysis, and automated reporting.\n\n## What you can do\n\n- **Automated Reconnaissance**: Run mapping and configuration checks on target infrastructure.\n- **Vulnerability Checks**: Scan code bases, local ports, and endpoints for common security risks.\n- **Structure Reports**: Automatically format security issues into professional reports.\n\n## Installation\n\nInstall using the marketplace install button or run `rapr install bughunter`.",
       "category": "skill",
       "emoji": "🎯",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -6875,8 +6875,8 @@
       },
       "purpose_category": "Security & Compliance",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "html-anything",
@@ -6885,7 +6885,7 @@
       "long_description": "# HTML Anything\n\nHTML Anything is an agent-focused rendering skill that compiles Markdown, CSV, JSON, and other text inputs into beautifully designed, fully responsive HTML pages or shareable images. It solves formatting issues when preparing drafts for platforms like WeChat, X, Zhihu, and other web outlets.\n\n## What you can do\n\n- **Document Conversion**: Turn text/JSON into modern HTML layouts in seconds.\n- **Publishing Formats**: Generate responsive styling suitable for newsletters and blog engines.\n- **Screenshot Generation**: Render HTML directly to PNG/JPEG for social media sharing.\n- **Custom Templates**: Apply specific presets designed for maximum readability.\n\n## Installation\n\nInstall using the marketplace install button or run `rapr install html-anything`.",
       "category": "skill",
       "emoji": "🌐",
-      "author": "RAPR AI",
+      "author": "Open-source community",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -6926,8 +6926,8 @@
       },
       "purpose_category": "Design & Frontend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "openviking",
@@ -6936,7 +6936,7 @@
       "long_description": "# OpenViking\n\nOpenViking is an open-source hierarchical context database and memory management layer for AI agents. It uses a structured `viking://` URI filesystem layout to organize agent knowledge, assets, and guidelines. By utilizing tiered (L0/L1/L2) memory retrieval, it reduces token usage and improves retrieval accuracy over standard flat vector databases.\n\n## What you can do\n\n- **Hierarchical Memory**: Organize memories and tasks in a filesystem-like layout.\n- **Context Tiering**: Retrieve only the context tier you need (L0 fast memory, L1 project docs, L2 heavy archives).\n- **Token Saving**: Load precise context subsets instead of dumping entire directories into LLM prompts.\n\n## Installation\n\nInstall using the marketplace install button or run `rapr install openviking`.",
       "category": "skill",
       "emoji": "🛡️",
-      "author": "OpenViking / RAPR AI",
+      "author": "OpenViking",
       "version": "1.0.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/rapr-ai-website",
@@ -6977,8 +6977,8 @@
       },
       "purpose_category": "Data, Databases & Backend",
       "license": "MIT",
-      "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions and workflow guidance."
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     },
     {
       "slug": "notion-ntn-cli",
