@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "updated_at": "2026-06-02",
+  "version": 3,
+  "updated_at": "2026-06-05",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -13531,6 +13531,57 @@
       },
       "purpose_category": "Content, Docs & Media",
       "license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "hyperframes",
+      "name": "HyperFrames",
+      "description": "Create HTML-based video compositions, animations, captions, voiceovers, audio-reactive visuals, and scene transitions.",
+      "long_description": "# HyperFrames\n\nHTML is the source of truth for video. A composition is an HTML file with `data-*` attributes for timing, a GSAP timeline for animation, and CSS for appearance. Build title cards, overlays, captions synced to audio, text-to-speech narration, audio-reactive animation, animated text highlighting, and scene transitions.\n\n## What you get\n\nThis package installs the skill instructions and any included workflow files into RAPR AI so agents can activate the capability from chat.\n\n## Install\n\nUse the marketplace install button or run `rapr install hyperframes`.",
+      "category": "skill",
+      "emoji": "🎬",
+      "author": "HeyGen",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/heygen-com/hyperframes",
+      "tags": [
+        "video",
+        "html",
+        "animation",
+        "captions",
+        "motion"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-05",
+      "updated_at": "2026-06-05",
+      "download_url": "/marketplace/packages/hyperframes-1.0.0.raprpkg",
+      "file_size": "15.9 KB",
+      "keywords": [
+        "video",
+        "html",
+        "animation",
+        "captions",
+        "motion"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install hyperframes",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep hyperframes"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "Apache-2.0",
+      "upstream_license": "Apache-2.0",
       "marketplace_kind": "Curated Public Repo",
       "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     }
