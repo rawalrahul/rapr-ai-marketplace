@@ -6430,7 +6430,7 @@
       "category": "skill",
       "emoji": "🎬",
       "author": "RAPR AI",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/viral-shorts-skill",
       "tags": [
@@ -6444,8 +6444,8 @@
       "pricing": "free",
       "pricing_note": "Free & Open Source",
       "created_at": "2026-05-30",
-      "updated_at": "2026-06-05",
-      "download_url": "/marketplace/packages/viral-shorts-1.2.0.raprpkg",
+      "updated_at": "2026-06-10",
+      "download_url": "/marketplace/packages/viral-shorts-1.3.0.raprpkg",
       "file_size": "1.5 MB",
       "keywords": [
         "viral-shorts",
@@ -6496,7 +6496,7 @@
       "license": "MIT",
       "marketplace_kind": "RAPR Skill",
       "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, setup metadata, and bundled assets.",
-      "release_notes": "## 1.2.0 - 2026-06-04\n\n- Added a **creative-director routing brain** (`references/creative-director.md`):\n  classifies the input, decides the output format from a bare topic (schematic\n  explainer / illustrated explainer / footage-led hybrid / talking-head /\n  data-driven), the editing recipe each format needs, and the beat-by-beat\n  Hollywood-editor mindset. SKILL.md now routes through it as Step 0.\n- Added **illustrated (Kurzgesagt-style) mode** to the Explainer engine: scene\n  `layers[]` of transparent illustrations composited with depth parallax and\n  float/drift/rise/sink/zoom/pulse/spin motion, plus `backdrop` (solid/gradient/\n  cosmic with deterministic twinkling star field + vignette). New\n  `src/explainer/Illustrated.tsx`; backdrop ownership moved out of `Diagram`.\n- Documented the illustrated layer schema, AI art-asset generation, honest\n  ceiling (no rigged character lip-sync), and pacing rules in\n  `references/explainer-diagrams.md`."
+      "release_notes": "## Unreleased\n\n- Added a universal `1080x1920` safe-zone map with top, bottom, right, and\n  content-zone coordinates in `references/platform-specs.md`.\n- Expanded `references/visual-effects.md` with a vertical composition contract\n  for headlines, main visuals, payoff facts, diagram layouts, motion, layers,\n  mobile legibility, and the center-thumbnail mask test.\n- Added the universal safe-zone test to the final export QC gate in `SKILL.md`."
     },
     {
       "slug": "markitdown",
