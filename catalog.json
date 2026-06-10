@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-06-05",
+  "updated_at": "2026-06-10",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -6425,12 +6425,12 @@
     {
       "slug": "viral-shorts",
       "name": "Viral Shorts",
-      "description": "Create retention-optimized TikTok, Reels, and YouTube Shorts with hooks, captions, cuts, audio cues, and Remotion rendering.",
-      "long_description": "# Viral Shorts\n\nTurn raw clips into retention-optimized vertical shorts for TikTok, Instagram Reels, and YouTube Shorts using a practical short-form video workflow plus a bundled Remotion template.\n\n## What you can do\n\n- **Find the hook**: Identify the strongest 1-2 second opener and move it to the front.\n- **Build retention edits**: Plan cuts, punch-in zooms, camera moves, caption beats, sound effects, and loop mechanics.\n- **Burn in captions**: Use word-level Whisper captions with TikTok-style active-word highlighting.\n- **Render with Remotion**: Start from the included Remotion project and drive the edit from a typed `editConfig.ts` file.\n- **Adapt by niche**: Apply different guidance for talking-head clips, podcast cutdowns, faceless videos, family content, and general social posts.\n- **Handle rights honestly**: Use royalty-free or licensed audio and understand the risks around movie, TV, music, and third-party footage.\n\n## Prerequisites\n\nThe skill includes a ready Remotion project under `assets/remotion-viral-short/`. For rendering, install its dependencies when you use the template:\n\n```bash\ncd assets/remotion-viral-short\nnpm install\nnpm run dev\n```\n\nFor transcription, the template uses Remotion's Whisper.cpp tooling and creates word-level caption JSON from the raw clip.\n\n## Example Requests\n\n- \"Edit this talking-head clip into a TikTok with captions and a strong hook.\"\n- \"Cut this podcast moment into a 30-second YouTube Short.\"\n- \"Make this raw video more retention-optimized for Instagram Reels.\"\n- \"Add word-by-word captions, punch-ins, sound effects, and a seamless loop.\"\n- \"Review why my short flopped and suggest a better hook.\"",
+      "description": "Creative-director video skill for retention shorts, podcast cutdowns, footage-led hybrids, and animated explainers with Remotion.",
+      "long_description": "# Viral Shorts Skill\n\nA creative-director video skill: it decides what kind of video a request or\ntopic needs, then produces it — from raw-clip edits to fully animated\nexplainers.\n\nViral Shorts is a RAPR AI skill that pairs agent instructions with a bundled\nRemotion project so the workflow moves from creative direction to an actual\nrendered video. It ships **two rendering engines** and a routing brain that\npicks between them.\n\n## What It Does\n\nGiven any request, it first acts as a **creative director** (see\n`references/creative-director.md`): it classifies the input and, from a bare\ntopic, chooses the right format and the editing approach each format needs.\n\n**1. Footage engine — retention edits (`ViralShort`)**\nFor a raw clip you hand over (or want produced from sourced B-roll):\n- Finds the strongest 1-2 second hook and moves it to the front.\n- Plans a retention edit using cuts, word-by-word captions, punch-in zooms,\n  camera moves, color grade, sound effects, transitions, and payoff timing.\n- Auto-sources missing B-roll (Pexels/Pixabay) or generates it via AI MCP tools.\n- Adapts for TikTok, Reels, and YouTube Shorts; uses live trend research.\n- Talking-head, podcast cutdowns, faceless/AI, family, and general content.\n\n**2. Explainer engine — animation from scratch, no footage (`Explainer`)**\nFor a topic (\"explain how X works\"):\n- **Schematic / ByteByteGo style:** typed component icons (client, server, DB,\n  cache, queue, load balancer, CDN, gateway, cloud…), auto-routed orthogonal\n  wires, color-coded request packets flowing along them, step-by-step build-up,\n  numbered callouts, scene sequencing, voiceover + synced captions.\n- **Illustrated / Kurzgesagt style:** flat-design illustration layers\n  (AI-generated) composited with depth parallax and float/drift/rise/pulse/spin\n  motion over gradient and cosmic (star-field + vignette) backdrops.\n- Scenes can be pure-schematic, pure-illustrated, or hybrid. Honest ceiling: it\n  produces illustrated, parallaxed, motion-rich scenes — not rigged\n  character lip-sync / cel animation.\n\n**3. Hybrids — the Hollywood-editor approach**\nMost strong videos blend modes. The skill decides the medium beat-by-beat:\nreal thing → footage, structure → diagram, abstraction → illustration, stat →\nnumber. Engines can be chained (render an explainer, then dress it with the\nfootage engine for a Short).\n\n## Install In RAPR\n\nFrom the RAPR marketplace:\n\n```bash\nrapr install viral-shorts\n```\n\nThen ask RAPR things like:\n\n```text\nEdit this talking-head clip into a TikTok with captions and a strong hook.\nCut this podcast moment into a 30-second YouTube Short.\nMake a ByteByteGo-style video explaining how a CDN works.\nMake a Kurzgesagt-style explainer about how vaccines train the immune system.\nTurn this topic into a video and decide the best format yourself.\nReview why my short flopped and suggest a better hook.\n```\n\n## Render With The Bundled Remotion Template\n\nThe render template lives in `assets/remotion-viral-short` and hosts both\ncompositions.\n\n```bash\ncd assets/remotion-viral-short\nnpm install\nnpm run dev        # Remotion Studio: open \"ViralShort\" or \"Explainer\"\n```\n\n### Footage edit (`ViralShort`)\n\n1. Drop your source clip into `public/`.\n2. Transcribe for word-level captions:\n\n```bash\nnode transcribe.mjs public/raw.mp4\n```\n\n3. Edit `src/editConfig.ts` (hook, cuts, captions, zooms, audio, loop).\n4. Preview with `npm run dev`, then render:\n\n```bash\nnpm run render\n```\n\n### Animated explainer (`Explainer`) — no footage, no transcription\n\n1. Fill in `src/explainer/diagramConfig.ts` (scenes, nodes, edges, packets, or\n   illustrated layers + backdrops). For illustrated mode, drop transparent art\n   in `public/art/`; for voiceover, drop audio in `public/vo/`.\n2. Preview with `npm run dev` (open the \"Explainer\" composition), then render:\n\n```bash\nnpm run render:explainer\n```\n\nSee `references/explainer-diagrams.md` for the full topic → script → storyboard\n→ config → render workflow, and `references/creative-director.md` for choosing\nthe format.\n\n## Repo Layout\n\n```text\nSKILL.md                                   Agent instructions; routes between engines\nmanifest.json                              RAPR package metadata\nreferences/\n  creative-director.md                     Format routing brain (read first)\n  explainer-diagrams.md                    Schematic + illustrated explainer engine\n  hooks.md, visual-effects.md, audio.md,   Footage-engine guidance\n  platform-specs.md, niches.md,\n  footage-pipeline.md, sourcing-footage.md,\n  editing-pipeline.md, premium-quality.md\nassets/remotion-viral-short/\n  src/editConfig.ts, src/ViralShort.tsx    Footage engine (ViralShort)\n  src/explainer/                           Explainer engine (Explainer)\nLICENSE                                    MIT license\n```\n\n## Good First Improvements\n\n- Add more caption presets and example `editConfig.ts` files (talking-head,\n  podcast, faceless).\n- Add a node/icon and an animated-chart pack to the explainer engine.\n- Add a starter art-asset prompt library for illustrated (Kurzgesagt) mode.\n- Add reusable SFX packs with licensing notes.\n- Add before/after demo clips and retention breakdowns.\n\n## License\n\nMIT. See `LICENSE`.\n",
       "category": "skill",
       "emoji": "🎬",
       "author": "RAPR AI",
-      "version": "1.0.0",
+      "version": "1.2.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/rawalrahul/viral-shorts-skill",
       "tags": [
@@ -6444,32 +6444,29 @@
       "pricing": "free",
       "pricing_note": "Free & Open Source",
       "created_at": "2026-05-30",
-      "updated_at": "2026-06-02",
-      "download_url": "/marketplace/packages/viral-shorts-1.0.0.raprpkg",
-      "file_size": "68.4 KB",
+      "updated_at": "2026-06-05",
+      "download_url": "/marketplace/packages/viral-shorts-1.2.0.raprpkg",
+      "file_size": "1.5 MB",
       "keywords": [
         "viral-shorts",
-        "viral shorts",
         "shorts",
-        "youtube shorts",
         "reels",
-        "instagram reels",
         "tiktok",
-        "short-form video",
-        "video editing",
-        "captions",
-        "word-by-word captions",
-        "karaoke captions",
-        "hooks",
-        "retention",
+        "youtube-shorts",
         "remotion",
-        "whisper",
-        "sfx",
-        "trending audio",
-        "podcast cutdown",
-        "talking head",
-        "faceless video",
-        "social media video"
+        "captions",
+        "video-editing",
+        "social-video",
+        "retention",
+        "explainer-video",
+        "system-design",
+        "bytebytego",
+        "kurzgesagt",
+        "illustrated-explainer",
+        "motion-graphics",
+        "creative-director",
+        "technical-animation",
+        "diagram-animation"
       ],
       "setup": null,
       "install_commands": [
@@ -6498,7 +6495,8 @@
       "purpose_category": "Content, Docs & Media",
       "license": "MIT",
       "marketplace_kind": "RAPR Skill",
-      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, setup metadata, and bundled assets."
+      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, setup metadata, and bundled assets.",
+      "release_notes": "## 1.2.0 - 2026-06-04\n\n- Added a **creative-director routing brain** (`references/creative-director.md`):\n  classifies the input, decides the output format from a bare topic (schematic\n  explainer / illustrated explainer / footage-led hybrid / talking-head /\n  data-driven), the editing recipe each format needs, and the beat-by-beat\n  Hollywood-editor mindset. SKILL.md now routes through it as Step 0.\n- Added **illustrated (Kurzgesagt-style) mode** to the Explainer engine: scene\n  `layers[]` of transparent illustrations composited with depth parallax and\n  float/drift/rise/sink/zoom/pulse/spin motion, plus `backdrop` (solid/gradient/\n  cosmic with deterministic twinkling star field + vignette). New\n  `src/explainer/Illustrated.tsx`; backdrop ownership moved out of `Diagram`.\n- Documented the illustrated layer schema, AI art-asset generation, honest\n  ceiling (no rigged character lip-sync), and pacing rules in\n  `references/explainer-diagrams.md`."
     },
     {
       "slug": "markitdown",
@@ -13584,6 +13582,216 @@
       "upstream_license": "Apache-2.0",
       "marketplace_kind": "Curated Public Repo",
       "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "the-ai-search-spy",
+      "name": "The AI-Search Spy",
+      "description": "Answer-engine visibility workflow for checking whether AI search tools understand, cite, or recommend a brand or page.",
+      "long_description": "# The AI-Search Spy\n\nThe AI-Search Spy is a RAPR-authored workflow for testing answer-engine visibility across AI search prompts, category queries, competitor alternatives, integration queries, and buyer objections. It helps agents determine whether a brand is visible, partially visible, invisible, mispositioned, or unsupported by clear source-of-truth content.\n\n## Example Requests\n\n- \"Use The AI-Search Spy to see whether AI search understands our product.\"\n- \"Check the prompts where Perplexity or ChatGPT should mention us.\"\n- \"Find AI-search visibility gaps and source-of-truth fixes.\"",
+      "category": "skill",
+      "emoji": "???",
+      "author": "RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/rawalrahul/rapr-ai-marketplace",
+      "tags": [
+        "ai-search",
+        "aeo",
+        "geo",
+        "llm-visibility",
+        "seo"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-10",
+      "updated_at": "2026-06-10",
+      "download_url": "/marketplace/packages/the-ai-search-spy-1.0.0.raprpkg",
+      "file_size": "3.1 KB",
+      "keywords": [
+        "the-ai-search-spy",
+        "ai search spy",
+        "answer engine visibility",
+        "llm visibility",
+        "aeo",
+        "geo",
+        "chatgpt",
+        "perplexity"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install the-ai-search-spy",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep the-ai-search-spy"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required. Live visibility checks may use public web search or third-party SEO tools when available."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "MIT",
+      "marketplace_kind": "RAPR Skill",
+      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, and setup metadata."
+    },
+    {
+      "slug": "the-auditor",
+      "name": "The Auditor",
+      "description": "Technical SEO, on-page SEO, AI-search readiness, content quality, and conversion audit workflow for websites and product pages.",
+      "long_description": "# The Auditor\n\nThe Auditor is a RAPR-authored SEO/AEO audit skill for inspecting websites, landing pages, docs, marketplace listings, and product pages. It checks technical SEO, metadata, headings, schema, robots, sitemap, llms.txt, content clarity, internal links, and conversion paths, then ranks findings by impact and confidence.\n\n## Example Requests\n\n- \"Use The Auditor to audit this website.\"\n- \"Find SEO, schema, and AI-search readiness issues on this landing page.\"\n- \"Tell me what should be improved before we rewrite or add pages.\"",
+      "category": "skill",
+      "emoji": "??",
+      "author": "RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/rawalrahul/rapr-ai-marketplace",
+      "tags": [
+        "seo",
+        "audit",
+        "aeo",
+        "schema",
+        "website"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-10",
+      "updated_at": "2026-06-10",
+      "download_url": "/marketplace/packages/the-auditor-1.0.0.raprpkg",
+      "file_size": "3.4 KB",
+      "keywords": [
+        "the-auditor",
+        "auditor",
+        "seo audit",
+        "website audit",
+        "ai search readiness",
+        "technical seo",
+        "on page seo"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install the-auditor",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep the-auditor"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required. Live visibility checks may use public web search or third-party SEO tools when available."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "MIT",
+      "marketplace_kind": "RAPR Skill",
+      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, and setup metadata."
+    },
+    {
+      "slug": "the-diagnoser",
+      "name": "The Diagnoser",
+      "description": "Long-tail keyword, search-intent, content gap, internal-link, and positioning diagnosis workflow.",
+      "long_description": "# The Diagnoser\n\nThe Diagnoser turns audit and visibility gaps into a practical SEO/AEO content backlog. It clusters long-tail keywords and buyer intents across alternatives, comparisons, integrations, jobs-to-be-done, trust objections, tutorials, and troubleshooting, then recommends pages, metadata, schema, and internal links.\n\n## Example Requests\n\n- \"Use The Diagnoser to find long-tail keyword gaps.\"\n- \"Map content opportunities for this SaaS website.\"\n- \"Tell me what pages we should create next and why.\"",
+      "category": "skill",
+      "emoji": "??",
+      "author": "RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/rawalrahul/rapr-ai-marketplace",
+      "tags": [
+        "keyword-research",
+        "content-gaps",
+        "seo",
+        "intent",
+        "programmatic-seo"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-10",
+      "updated_at": "2026-06-10",
+      "download_url": "/marketplace/packages/the-diagnoser-1.0.0.raprpkg",
+      "file_size": "3.0 KB",
+      "keywords": [
+        "the-diagnoser",
+        "diagnoser",
+        "long-tail keywords",
+        "keyword gaps",
+        "content gaps",
+        "search intent",
+        "programmatic seo"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install the-diagnoser",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep the-diagnoser"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required. Live visibility checks may use public web search or third-party SEO tools when available."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "MIT",
+      "marketplace_kind": "RAPR Skill",
+      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, and setup metadata."
+    },
+    {
+      "slug": "the-fixer",
+      "name": "The Fixer",
+      "description": "Implementation workflow for schema, llms.txt, metadata, internal links, content rewrites, and SEO/AEO fixes.",
+      "long_description": "# The Fixer\n\nThe Fixer implements scoped SEO and AEO improvements in websites and marketplace repos. It handles metadata, schema, llms.txt, FAQs, sitemap/robots updates, internal links, page copy, and data-driven SEO pages while preserving the project framework conventions.\n\n## Example Requests\n\n- \"Use The Fixer to implement the audit findings.\"\n- \"Add schema, update llms.txt, and improve metadata.\"\n- \"Turn this keyword diagnosis into code changes.\"",
+      "category": "skill",
+      "emoji": "???",
+      "author": "RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/rawalrahul/rapr-ai-marketplace",
+      "tags": [
+        "seo",
+        "schema",
+        "llms-txt",
+        "metadata",
+        "implementation"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-10",
+      "updated_at": "2026-06-10",
+      "download_url": "/marketplace/packages/the-fixer-1.0.0.raprpkg",
+      "file_size": "3.3 KB",
+      "keywords": [
+        "the-fixer",
+        "fixer",
+        "seo fixes",
+        "schema",
+        "llms.txt",
+        "metadata",
+        "internal links",
+        "aeo fixes"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install the-fixer",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep the-fixer"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required. Live visibility checks may use public web search or third-party SEO tools when available."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "MIT",
+      "marketplace_kind": "RAPR Skill",
+      "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, and setup metadata."
     }
   ]
 }
