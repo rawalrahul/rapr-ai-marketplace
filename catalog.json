@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-06-10",
+  "updated_at": "2026-06-20",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -13716,6 +13716,720 @@
       "license": "MIT",
       "marketplace_kind": "RAPR Skill",
       "license_scope": "This package contains RAPR-authored skill instructions, references, workflow guidance, and setup metadata."
+    },
+    {
+      "slug": "hallmark",
+      "name": "Hallmark",
+      "description": "Anti-AI-slop design skill that builds, audits, and redesigns UI so it refuses to look AI-generated.",
+      "long_description": "# Hallmark\n\nAnti-AI-slop design skill for Claude Code, Cursor, and Codex that builds, audits, redesigns, and studies UI so output stops reading as templated.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install hallmark`.",
+      "category": "skill",
+      "emoji": "🎨",
+      "author": "Together AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/Nutlope/hallmark",
+      "tags": [
+        "design",
+        "frontend",
+        "anti-ai-slop",
+        "ui",
+        "themes"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/hallmark-1.0.0.raprpkg",
+      "file_size": "2.0 KB",
+      "keywords": [
+        "design",
+        "frontend",
+        "anti-ai-slop",
+        "ui",
+        "themes"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install hallmark",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep hallmark"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Design & Frontend",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "claw-empire",
+      "name": "Claw-Empire",
+      "description": "Local-first AI agent office simulator that orchestrates CLI, OAuth, and API agents as a virtual company.",
+      "long_description": "# Claw-Empire\n\nCommand an AI agent empire from a CEO desk: a local-first office simulator that orchestrates Claude Code, Codex, Gemini, OpenCode, Kimi, Copilot, and Antigravity as a virtual company of autonomous agents.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install claw-empire`.",
+      "category": "skill",
+      "emoji": "🏢",
+      "author": "GreenSheep01201",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/GreenSheep01201/claw-empire",
+      "tags": [
+        "agents",
+        "orchestration",
+        "multi-agent",
+        "local-first",
+        "cli"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/claw-empire-1.0.0.raprpkg",
+      "file_size": "5.0 KB",
+      "keywords": [
+        "agents",
+        "orchestration",
+        "multi-agent",
+        "local-first",
+        "cli"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install claw-empire",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep claw-empire"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Agent Workflows",
+      "license": "Apache-2.0",
+      "upstream_license": "Apache-2.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "ponytail",
+      "name": "Ponytail",
+      "description": "Makes your AI agent write the minimum code: less LOC, cheaper, faster, still safe.",
+      "long_description": "# Ponytail\n\nMakes your AI agent think like the laziest senior dev in the room: the best code is the code you never wrote. ~54% less code, ~20% cheaper, ~27% faster, 100% safe on real agent sessions.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install ponytail`.",
+      "category": "skill",
+      "emoji": "✂️",
+      "author": "Dietrich Gebert",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/DietrichGebert/ponytail",
+      "tags": [
+        "code-quality",
+        "minimalism",
+        "agents",
+        "tokens",
+        "yagni"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/ponytail-1.0.0.raprpkg",
+      "file_size": "1.9 KB",
+      "keywords": [
+        "code-quality",
+        "minimalism",
+        "agents",
+        "tokens",
+        "yagni"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install ponytail",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep ponytail"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Coding & Code Quality",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "gortex",
+      "name": "Gortex",
+      "description": "High-performance code-intelligence engine: indexes code into a knowledge graph and exposes it via CLI, MCP, and web UI.",
+      "long_description": "# Gortex\n\nHigh-performance code-intelligence engine for AI agents and IDEs. Parses 257 languages via tree-sitter into a persistent knowledge graph, exposed through CLI, MCP server, and web UI. Up to 50x fewer tokens per response. Single static binary, zero dependencies.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install gortex`.",
+      "category": "skill",
+      "emoji": "🕸️",
+      "author": "zzet",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/zzet/gortex",
+      "tags": [
+        "code-intelligence",
+        "mcp",
+        "knowledge-graph",
+        "ast",
+        "tree-sitter"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/gortex-1.0.0.raprpkg",
+      "file_size": "5.2 KB",
+      "keywords": [
+        "code-intelligence",
+        "mcp",
+        "knowledge-graph",
+        "ast",
+        "tree-sitter"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install gortex",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep gortex"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Coding & Code Quality",
+      "license": "Apache-2.0",
+      "upstream_license": "Apache-2.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "oh-my-pi",
+      "name": "oh-my-pi",
+      "description": "Terminal AI coding agent with the IDE wired in: hash-anchored edits, optimized tool harness, LSP, DAP, browser.",
+      "long_description": "# oh-my-pi\n\nA coding agent for the terminal with the IDE wired in. Hash-anchored edits, optimized tool harness, 40+ providers, 32 built-in tools, 14 LSP ops, 28 DAP ops, ~55k lines of Rust core. Fork of Pi by @mariozechner.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install oh-my-pi`.",
+      "category": "skill",
+      "emoji": "🥧",
+      "author": "can1357",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/can1357/oh-my-pi",
+      "tags": [
+        "coding-agent",
+        "terminal",
+        "lsp",
+        "cli",
+        "agent"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/oh-my-pi-1.0.0.raprpkg",
+      "file_size": "1.8 KB",
+      "keywords": [
+        "coding-agent",
+        "terminal",
+        "lsp",
+        "cli",
+        "agent"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install oh-my-pi",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep oh-my-pi"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Agent Workflows",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "opus-fable-mode",
+      "name": "Opus Fable Mode",
+      "description": "Steer Claude Opus toward a calmer, result-first, less verbose working style with a governor block, a re-inject hook, and a log measurement harness.",
+      "long_description": "# Opus Fable Mode\n\nMake Claude Opus behave more like the calmer, terser Fable working style in Claude Code: a behavioral governor block, a UserPromptSubmit re-injection hook that defeats context decay, and a leak_test harness that measures convergence against your own logs.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install opus-fable-mode`.",
+      "category": "skill",
+      "emoji": "📖",
+      "author": "ILLYAHU",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/ILLYAHU/opus-fable-mode",
+      "tags": [
+        "claude-code",
+        "behavior",
+        "hooks",
+        "prompting",
+        "measurement"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/opus-fable-mode-1.0.0.raprpkg",
+      "file_size": "2.0 KB",
+      "keywords": [
+        "claude-code",
+        "behavior",
+        "hooks",
+        "prompting",
+        "measurement"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install opus-fable-mode",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep opus-fable-mode"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Agent Workflows",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "agent-reach",
+      "name": "Agent Reach",
+      "description": "Give your AI agent eyes on the whole internet: read and search Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu, and more.",
+      "long_description": "# Agent Reach\n\nOne-line setup that gives your AI agent internet capability: read and search Twitter, Reddit, YouTube transcripts, GitHub, Bilibili, Xiaohongshu, RSS, and arbitrary web pages, with the most reliable access method picked and configured for you.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install agent-reach`.",
+      "category": "skill",
+      "emoji": "👁️",
+      "author": "Panniantong",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/Panniantong/Agent-Reach",
+      "tags": [
+        "web",
+        "scraping",
+        "twitter",
+        "reddit",
+        "youtube"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/agent-reach-1.0.0.raprpkg",
+      "file_size": "1.8 KB",
+      "keywords": [
+        "web",
+        "scraping",
+        "twitter",
+        "reddit",
+        "youtube"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install agent-reach",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep agent-reach"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Research & Web Intelligence",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "omniagent",
+      "name": "OmniAgent",
+      "description": "Self-evolving agent framework: real-time skill, context, and model evolution plus dynamic security hardening.",
+      "long_description": "# OmniAgent\n\nAn open-source self-evolving agent framework (inspired by OpenClaw) implementing full-dimensional self-evolution across skills, context, and model, with dynamic four-layer security hardening, a Hyper-Harness execution scaffold, and a dual-layer Deep Reflexion loop.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install omniagent`.",
+      "category": "skill",
+      "emoji": "🧠",
+      "author": "OmniAgent Contributors",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/YeQing17-2026/OmniAgent",
+      "tags": [
+        "agent-framework",
+        "self-evolving",
+        "security",
+        "memory",
+        "reinforcement-learning"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source (GPL-3.0)",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/omniagent-1.0.0.raprpkg",
+      "file_size": "1.8 KB",
+      "keywords": [
+        "agent-framework",
+        "self-evolving",
+        "security",
+        "memory",
+        "reinforcement-learning"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install omniagent",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep omniagent"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Agent Workflows",
+      "license": "GPL-3.0",
+      "upstream_license": "GPL-3.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project. The upstream is GPL-3.0 (copyleft); comply with its terms for any use or derivative works."
+    },
+    {
+      "slug": "codex-autoresearch",
+      "name": "Codex Autoresearch",
+      "description": "Self-directed iterative loop for Codex: tell it what to improve, it modifies, verifies, keeps or discards, and repeats.",
+      "long_description": "# Codex Autoresearch\n\nA Codex skill for autonomous goal-driven experimentation. Tell Codex what to improve, then walk away: it modifies code, verifies the result mechanically, keeps or discards, and repeats, leaving a log of experiments and a better codebase.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install codex-autoresearch`.",
+      "category": "skill",
+      "emoji": "🔬",
+      "author": "leo-lilinxiao",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/leo-lilinxiao/codex-autoresearch",
+      "tags": [
+        "codex",
+        "autonomous",
+        "optimization",
+        "experiments",
+        "skill"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/codex-autoresearch-1.0.0.raprpkg",
+      "file_size": "1.8 KB",
+      "keywords": [
+        "codex",
+        "autonomous",
+        "optimization",
+        "experiments",
+        "skill"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install codex-autoresearch",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep codex-autoresearch"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Agent Workflows",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "helixdb",
+      "name": "HelixDB",
+      "description": "OLTP graph-vector database in Rust for knowledge graphs, RAG, and AI memory.",
+      "long_description": "# HelixDB\n\nHelixDB is an OLTP graph-vector database built from scratch in Rust for knowledge graphs, RAG, and AI memory. One platform for graph + vector (plus KV, document, relational), giving agents federated access to company data without separate vector, graph, and application databases.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install helixdb`.",
+      "category": "skill",
+      "emoji": "🧬",
+      "author": "HelixDB",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/HelixDB/helix-db",
+      "tags": [
+        "database",
+        "graph",
+        "vector",
+        "rag",
+        "ai-memory"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source; cloud tier available",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/helixdb-1.0.0.raprpkg",
+      "file_size": "5.1 KB",
+      "keywords": [
+        "database",
+        "graph",
+        "vector",
+        "rag",
+        "ai-memory"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install helixdb",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep helixdb"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Data, Databases & Backend",
+      "license": "Apache-2.0",
+      "upstream_license": "Apache-2.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "textsnap",
+      "name": "textsnap",
+      "description": "Snap any image, screenshot, or webpage into plaintext. No GPU. No cloud. One command.",
+      "long_description": "# textsnap\n\nCPU-only OCR in one command: turn any image, screenshot, image URL, or webpage into plaintext or markdown. A 0.9B PaddleOCR-VL model quantized to q4 ONNX runs on a plain laptop, fully offline after the first download. No GPU, no cloud, no API keys.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install textsnap`.",
+      "category": "skill",
+      "emoji": "📸",
+      "author": "kouhxp",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/kouhxp/textsnap",
+      "tags": [
+        "ocr",
+        "cpu",
+        "offline",
+        "cli",
+        "screenshot"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/textsnap-1.0.0.raprpkg",
+      "file_size": "1.8 KB",
+      "keywords": [
+        "ocr",
+        "cpu",
+        "offline",
+        "cli",
+        "screenshot"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install textsnap",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep textsnap"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "repowise",
+      "name": "repowise",
+      "description": "Codebase intelligence layer for AI agents and humans: code health, auto docs, git analytics, dead-code and ownership signals.",
+      "long_description": "# repowise\n\nThe codebase intelligence layer for the AI era. Indexes a repo into five intelligence layers (dependency graph, git history, auto-generated docs, architectural decisions, code health) and exposes nine MCP tools, giving AI agents context and teams trustworthy health, risk, and ownership signals.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install repowise`.",
+      "category": "skill",
+      "emoji": "🧭",
+      "author": "repowise",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/repowise-dev/repowise",
+      "tags": [
+        "codebase-intelligence",
+        "mcp",
+        "code-health",
+        "git-analytics",
+        "docs"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source (AGPL-3.0); hosted team tier available",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/repowise-1.0.0.raprpkg",
+      "file_size": "1.6 KB",
+      "keywords": [
+        "codebase-intelligence",
+        "mcp",
+        "code-health",
+        "git-analytics",
+        "docs"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install repowise",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep repowise"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Coding & Code Quality",
+      "license": "AGPL-3.0",
+      "upstream_license": "AGPL-3.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project. The upstream is AGPL-3.0 (copyleft); comply with its terms for any use or derivative works."
+    },
+    {
+      "slug": "claude-context-governor",
+      "name": "Claude Context Governor",
+      "description": "Control plane for Claude Code: governs which MCP backends, skills, and models enter context so you pay context only for what is working.",
+      "long_description": "# Claude Context Governor\n\nA runtime governor for what enters Claude Code context. Multiplex a dozen MCP servers and a hundred skills behind one connection, load only the skills doing work right now, and route prompts to the right model. Reversible install; not memory restoration and not another MCP server.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install claude-context-governor`.",
+      "category": "skill",
+      "emoji": "🎛️",
+      "author": "TribalHouse",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/TribalHouse/claude-context-governor",
+      "tags": [
+        "claude-code",
+        "mcp",
+        "context",
+        "skills",
+        "model-routing"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/claude-context-governor-1.0.0.raprpkg",
+      "file_size": "1.9 KB",
+      "keywords": [
+        "claude-code",
+        "mcp",
+        "context",
+        "skills",
+        "model-routing"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install claude-context-governor",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep claude-context-governor"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Agent Workflows",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "zpix",
+      "name": "Zpix Pixel Font",
+      "description": "Zpix (最像素): a pixel/bitmap font supporting English plus Simplified and Traditional Chinese.",
+      "long_description": "# Zpix Pixel Font\n\nZpix (最像素) is a pixel (bitmap) font supporting English and Chinese (Simplified + Traditional), ideal for retro, 8-bit, and game UI typography. Free for personal and educational use; commercial use requires a paid license from the author.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install zpix`.",
+      "category": "skill",
+      "emoji": "🔠",
+      "author": "SolidZORO",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/SolidZORO/zpix-pixel-font",
+      "tags": [
+        "font",
+        "pixel-font",
+        "chinese",
+        "typography",
+        "retro"
+      ],
+      "featured": false,
+      "pricing": "free_tier",
+      "pricing_note": "Free for personal & education use; commercial license paid (USD $1000 single product)",
+      "created_at": "2026-06-20",
+      "updated_at": "2026-06-20",
+      "download_url": "/marketplace/packages/zpix-1.0.0.raprpkg",
+      "file_size": "1.8 KB",
+      "keywords": [
+        "font",
+        "pixel-font",
+        "chinese",
+        "typography",
+        "retro"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install zpix",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep zpix"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No authentication required."
+      },
+      "purpose_category": "Design & Frontend",
+      "license": "Proprietary (free for personal/education; commercial paid)",
+      "upstream_license": "Proprietary (free for personal/education; commercial paid)",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package is a curated discovery wrapper with attribution and usage guidance only. The upstream font is proprietary: free for personal and educational use, paid commercial license required, modification and redistribution prohibited. This package does not bundle or relicense the font; obtain it and any commercial license from the upstream source."
     }
   ]
 }
