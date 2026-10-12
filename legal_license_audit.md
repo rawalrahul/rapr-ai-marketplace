@@ -313,6 +313,7 @@ copies or substantial portions of the Software.
 | 258 | **Github Oauth (Standalone)** | Standalone Package | RAPR AI | `MIT` | Not asserted | N/A | Reviewed |
 | 259 | **Notion Oauth (Standalone)** | Standalone Package | RAPR AI | `MIT` | Not asserted | N/A | Reviewed |
 | 260 | **Slack Oauth (Standalone)** | Standalone Package | RAPR AI | `MIT` | Not asserted | N/A | Reviewed |
+| 261 | **OpenMontage** | Curated Public Repo | calesthio / RAPR AI | `MIT` | AGPL-3.0; This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated. | [Link](https://github.com/calesthio/OpenMontage) | Reviewed |
 
 ---
 *End of report. Audit complete for current package contents; re-run before release if package contents or upstream sources change.*

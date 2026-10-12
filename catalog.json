@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-06-20",
+  "updated_at": "2026-10-12",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -14430,6 +14430,81 @@
       "upstream_license": "Proprietary (free for personal/education; commercial paid)",
       "marketplace_kind": "Curated Public Repo",
       "license_scope": "This package is a curated discovery wrapper with attribution and usage guidance only. The upstream font is proprietary: free for personal and educational use, paid commercial license required, modification and redistribution prohibited. This package does not bundle or relicense the font; obtain it and any commercial license from the upstream source."
+    },
+    {
+      "slug": "openmontage",
+      "name": "OpenMontage",
+      "description": "Open-source agentic video production: turn a brief into a finished, reviewed MP4 with explainer, documentary montage, shorts, podcast-clip and screen-demo pipelines.",
+      "long_description": "# OpenMontage\n\nOpenMontage is an open-source, agentic video production system. It runs inside your AI coding assistant: the agent researches the topic, writes the script, finds or generates assets, narrates, adds music and subtitles, renders, and self-reviews, with your approval at the creative and spending gates.\n\n## What you can do\n\n- **Pick a pipeline**: Animated Explainer, Animation, Avatar Spokesperson, Cinematic, Clip Factory, Documentary Montage, Hybrid, Localization & Dub, Podcast Repurpose, Screen Demo, Talking Head.\n- **Work for free or with paid providers**: Piper TTS, public-archive and free stock footage, and Remotion/HyperFrames + FFmpeg rendering need no paid keys; optional providers include Kling, Veo, Runway, FLUX, ElevenLabs and Suno.\n- **Control spend**: Default $10 total budget cap and approval for any action over $0.50.\n- **Render for every platform**: YouTube (incl. 4K), Shorts, Reels, TikTok, Instagram feed, LinkedIn and 21:9 cinematic profiles.\n\n## Prerequisites\n\nPython 3.10+, FFmpeg, Node.js 18+ (22+ for HyperFrames). A GPU is only needed for local video generation.\n\n```bash\ngit clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup\nmake demo\n```\n\n## Example Requests\n\n- \"Use OpenMontage to make a 45-second animated explainer about why the sky is blue, 9:16, free providers only.\"\n- \"Make a 90-second documentary montage about a city at 4am, real footage only, no narration.\"\n- \"Cut this podcast episode into five vertical clips with captions.\"\n\nOpenMontage is licensed AGPL-3.0. Check those terms before building it into a hosted or closed-source product.",
+      "category": "skill",
+      "emoji": "🎬",
+      "author": "calesthio / RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/calesthio/OpenMontage",
+      "tags": [
+        "video",
+        "explainer",
+        "documentary",
+        "shorts",
+        "automation"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source; optional paid providers",
+      "created_at": "2026-10-12",
+      "updated_at": "2026-10-12",
+      "download_url": "/marketplace/packages/openmontage-1.0.0.raprpkg",
+      "file_size": "5.4 KB",
+      "keywords": [
+        "openmontage",
+        "video",
+        "video production",
+        "explainer video",
+        "documentary",
+        "montage",
+        "shorts",
+        "reels",
+        "tiktok",
+        "podcast clips",
+        "screen demo",
+        "talking head",
+        "dubbing",
+        "remotion",
+        "hyperframes",
+        "ffmpeg",
+        "tts",
+        "piper"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "label": "Clone and set up OpenMontage",
+          "windows_cmd": "$ErrorActionPreference=\"Stop\"; $dest=Join-Path $env:USERPROFILE \"Developer\\OpenMontage\"; if(!(Test-Path $dest)){ New-Item -ItemType Directory -Force (Split-Path $dest) | Out-Null; git clone https://github.com/calesthio/OpenMontage.git $dest }; Push-Location $dest; py -3 -m venv .venv; & .\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt; & .\\.venv\\Scripts\\python.exe -m pip install piper-tts; Push-Location remotion-composer; npm install; Pop-Location; if(!(Test-Path .env)){ Copy-Item .env.example .env }; Pop-Location",
+          "windows_check_cmd": "Test-Path (Join-Path $env:USERPROFILE \"Developer\\OpenMontage\\.venv\")",
+          "shell": "powershell",
+          "platforms": [
+            "windows"
+          ],
+          "timeout_seconds": 900,
+          "check_timeout_seconds": 10
+        },
+        {
+          "label": "Install the OpenMontage skill",
+          "cmd": "rapr install openmontage",
+          "check_cmd": "rapr skill list | grep openmontage"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No login needed for the free path. Optional provider API keys (e.g. FAL_KEY, ELEVENLABS_API_KEY, PEXELS_API_KEY) go in OpenMontage's own .env file."
+      },
+      "purpose_category": "Content, Docs & Media",
+      "license": "MIT",
+      "upstream_license": "AGPL-3.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     }
   ]
 }
