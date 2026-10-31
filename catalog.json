@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-06-20",
+  "updated_at": "2026-10-31",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -14430,6 +14430,133 @@
       "upstream_license": "Proprietary (free for personal/education; commercial paid)",
       "marketplace_kind": "Curated Public Repo",
       "license_scope": "This package is a curated discovery wrapper with attribution and usage guidance only. The upstream font is proprietary: free for personal and educational use, paid commercial license required, modification and redistribution prohibited. This package does not bundle or relicense the font; obtain it and any commercial license from the upstream source."
+    },
+    {
+      "slug": "cloudflare-security",
+      "name": "Cloudflare Security",
+      "description": "Defensive Cloudflare hardening: audit and enable WAF, rate limiting, bot/DDoS protection, Turnstile, Access, secrets, TLS, and AI Gateway.",
+      "long_description": "# Cloudflare Security\n\nDefensive hardening guidance for Cloudflare properties. Audit the current security posture of a zone, Worker, or application and enable the protections Cloudflare already offers.\n\n## What you can do\n\n- **Audit first**: See which protections are already enabled before changing anything.\n- **Edge protection**: WAF managed + custom rules, rate limiting, DDoS, bot management.\n- **Access control**: Cloudflare Access / Zero Trust policies and mTLS.\n- **Human verification**: Turnstile on forms and login flows.\n- **Secrets & transport**: Worker secrets, TLS mode, HSTS, minimum TLS version.\n- **AI safety**: AI Gateway rate and abuse controls for model endpoints.\n\n## Upstream\n\n```text\nhttps://github.com/cloudflare/skills\n```\n\n## Example Requests\n\n- \"Audit my Cloudflare zone and tell me which protections to enable.\"\n- \"Add a WAF rule and rate limiting to this API.\"\n- \"Put Turnstile on my login form.\"\n\n## Notes\n\nOnly change accounts you control. The skill never weakens a control without stating the risk and getting explicit confirmation.",
+      "category": "skill",
+      "emoji": "☁️",
+      "author": "Cloudflare / RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/cloudflare/skills",
+      "tags": [
+        "security",
+        "cloudflare",
+        "waf",
+        "zero-trust",
+        "hardening"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-10-31",
+      "updated_at": "2026-10-31",
+      "download_url": "/marketplace/packages/cloudflare-security-1.0.0.raprpkg",
+      "file_size": "2.5 KB",
+      "keywords": [
+        "cloudflare-security",
+        "cloudflare security",
+        "cloudflare",
+        "waf",
+        "rate limiting",
+        "ddos",
+        "turnstile",
+        "zero trust",
+        "access",
+        "tls",
+        "ai gateway",
+        "hardening",
+        "security"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install cloudflare-security",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep cloudflare-security"
+        },
+        {
+          "label": "Review upstream project",
+          "manual": true,
+          "instructions": "Open https://github.com/cloudflare/skills for the full upstream Cloudflare Agent Skills, Wrangler setup, and advanced configuration."
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No login for the router skill. Applying changes requires your own Cloudflare account access via Wrangler or the Cloudflare API/dashboard.",
+        "help_url": "https://github.com/cloudflare/skills"
+      },
+      "purpose_category": "Security & Compliance",
+      "license": "MIT",
+      "upstream_license": "Apache-2.0",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "claude-red",
+      "name": "Claude Red",
+      "description": "Authorized-use red-team methodology reference for pentest engagements, bug bounties, CTFs, and owned-asset security testing. Requires explicit authorization.",
+      "long_description": "# Claude Red\n\nAn **authorized-use** offensive-security methodology reference. It helps plan and organize red-team work for targets you are permitted to test, and points to the public `claude-red` skill library. It does not ship exploit payloads.\n\n## Authorized use only\n\nUse this skill ONLY when you have documented permission: a penetration-testing engagement, an in-scope bug-bounty program, a CTF competition, or an asset you own. The skill's first step is an authorization gate that confirms scope, permission, and rules of engagement before anything else.\n\n## What you can do\n\n- **Plan an authorized assessment**: Scope, recon planning, and methodology selection for in-scope targets.\n- **Safe validation**: Prefer non-destructive proof-of-concept; avoid data loss, denial of service, and irreversible changes.\n- **Report**: Findings with severity, reproduction steps, impact, and remediation.\n\n## Hard limits\n\nNo out-of-scope or third-party targets, no destructive or mass-automated actions, no persistence, and no use against real systems without authorization. For non-engagement work, use the defensive `security-review` or `anthropic-cybersecurity-skills` packages instead.\n\n## Upstream\n\n```text\nhttps://github.com/SnailSploit/Claude-Red\n```",
+      "category": "skill",
+      "emoji": "🔴",
+      "author": "SnailSploit / RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/SnailSploit/Claude-Red",
+      "tags": [
+        "security",
+        "red-team",
+        "penetration-testing",
+        "ctf",
+        "bug-bounty"
+      ],
+      "featured": false,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-10-31",
+      "updated_at": "2026-10-31",
+      "download_url": "/marketplace/packages/claude-red-1.0.0.raprpkg",
+      "file_size": "2.6 KB",
+      "keywords": [
+        "claude-red",
+        "claude red",
+        "red team",
+        "penetration testing",
+        "pentest",
+        "bug bounty",
+        "ctf",
+        "offensive security",
+        "authorized testing",
+        "security"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "rapr install claude-red",
+          "label": "Install skill",
+          "check_cmd": "rapr skill list | grep claude-red"
+        },
+        {
+          "label": "Review upstream project",
+          "manual": true,
+          "instructions": "Open https://github.com/SnailSploit/Claude-Red for the full upstream skill library. Use only for authorized security testing."
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No login required. This is a methodology reference; you must supply your own authorization and scope for any target.",
+        "help_url": "https://github.com/SnailSploit/Claude-Red"
+      },
+      "purpose_category": "Security & Compliance",
+      "license": "MIT",
+      "upstream_license": "MIT",
+      "marketplace_kind": "Curated Public Repo",
+      "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
     }
   ]
 }
