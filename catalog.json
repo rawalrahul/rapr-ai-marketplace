@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-04",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -14026,34 +14026,40 @@
     {
       "slug": "agent-reach",
       "name": "Agent Reach",
-      "description": "Give your AI agent eyes on the whole internet: read and search Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu, and more.",
-      "long_description": "# Agent Reach\n\nOne-line setup that gives your AI agent internet capability: read and search Twitter, Reddit, YouTube transcripts, GitHub, Bilibili, Xiaohongshu, RSS, and arbitrary web pages, with the most reliable access method picked and configured for you.\n\n## What you get\n\nThis package curates the upstream project with attribution, source links, install commands, and agent instructions so RAPR AI can activate the capability from chat. It does not bundle or relicense the upstream project unless explicitly stated.\n\n## Install\n\nUse the marketplace install button or run `rapr install agent-reach`.",
+      "description": "Read-only access to sites your AI can't reach on its own: YouTube and Bilibili transcripts, login-walled platforms like Reddit and Xiaohongshu, and clean data from GitHub, V2EX, and more.",
+      "long_description": "# Agent Reach\n\nAgent Reach is an open-source command-line tool that gives your AI agent read-only access to content its built-in web tools can't get: video subtitles and transcripts, platforms behind a login, Chinese platforms, and clean structured data. Every command returns JSON, and each platform tries a ranked list of access methods with automatic fallback.\n\n## Channels (upstream 1.6)\n\n- **Default, no login:** web pages and search, GitHub repos/issues/PRs, YouTube (info, search, subtitles), Bilibili, V2EX.\n- **Optional, added on request:** Xiaohongshu (RED), Reddit, LinkedIn jobs, Boss Zhipin, Xueqiu stock data, Xiaoyuzhou podcasts. Most need a login.\n- **Experimental, may break at any time:** Twitter/X, Facebook, Instagram.\n\nSpeech-to-text for YouTube and Xiaoyuzhou needs a Groq or OpenAI API key, which you enter in your own terminal.\n\n## What this package does\n\nThis package installs a RAPR skill that teaches your AI how to install Agent Reach from the official GitHub release, pick the right channel, handle errors, and follow its safety rules. It does not bundle or relicense the upstream tool.\n\n## Before you enable login channels\n\n- Agent Reach uses its own background browser. The first time it reads a site, it can copy **that site's login cookies from your Chrome** (only that site; your browser is untouched, and passwords are never read).\n- The copied login is usually your main account. Platforms may restrict accounts used for automated access, so a secondary account is recommended.\n- Reading platforms this way is subject to each platform's terms of service.\n\n## Install\n\n1. Click Install, or run `rapr install agent-reach`.\n2. Ask your AI: \"Install Agent Reach.\" It installs `uv` if needed, then the tool from the GitHub release.\n\nDo not install `agent-reach` from PyPI: the package with that name there is not this project.",
       "category": "skill",
       "emoji": "👁️",
       "author": "Panniantong",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "min_app_version": "2.0.0",
       "github_url": "https://github.com/Panniantong/Agent-Reach",
       "tags": [
         "web",
-        "scraping",
-        "twitter",
-        "reddit",
-        "youtube"
+        "research",
+        "youtube",
+        "transcripts",
+        "bilibili",
+        "xiaohongshu",
+        "reddit"
       ],
       "featured": false,
       "pricing": "free",
       "pricing_note": "Free & Open Source",
       "created_at": "2026-06-20",
-      "updated_at": "2026-06-20",
-      "download_url": "/marketplace/packages/agent-reach-1.0.0.raprpkg",
-      "file_size": "1.8 KB",
+      "updated_at": "2026-11-04",
+      "download_url": "/marketplace/packages/agent-reach-1.1.0.raprpkg",
+      "file_size": "5.1 KB",
       "keywords": [
         "web",
-        "scraping",
-        "twitter",
+        "research",
+        "youtube",
+        "transcripts",
+        "bilibili",
+        "xiaohongshu",
+        "github",
         "reddit",
-        "youtube"
+        "twitter"
       ],
       "setup": null,
       "install_commands": [
@@ -14061,12 +14067,17 @@
           "cmd": "rapr install agent-reach",
           "label": "Install skill",
           "check_cmd": "rapr skill list | grep agent-reach"
+        },
+        {
+          "cmd": "uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip && agent-reach setup",
+          "label": "Install Agent Reach tool (from GitHub, not PyPI)",
+          "check_cmd": "agent-reach version"
         }
       ],
       "auth_info": {
         "required": false,
-        "command": null,
-        "description": "No authentication required."
+        "command": "agent-reach login <channel>",
+        "description": "Default channels need no login. Optional and experimental channels (Reddit, Xiaohongshu, Twitter/X, LinkedIn search, and others) need you to log in yourself in Agent Reach's dedicated browser, or reuse that site's login from Chrome. Transcription needs a Groq or OpenAI key set with `agent-reach configure groq-key`."
       },
       "purpose_category": "Research & Web Intelligence",
       "license": "MIT",
