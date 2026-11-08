@@ -16,3 +16,21 @@ jobs:
           python-version: '3.12'
       - run: python scripts/validate_marketplace.py
 
+  # The website copies catalog.json and packages from this repo at build time
+  # (rapr-ai-website/scripts/sync-marketplace.mjs), and the desktop app reads
+  # the catalog from the website. Rebuilding the website after a push to main
+  # is what makes marketplace changes go live.
+  redeploy-website:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger rapr-ai-website production deploy
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.VERCEL_WEBSITE_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$DEPLOY_HOOK_URL" ]; then
+            echo "::warning::VERCEL_WEBSITE_DEPLOY_HOOK secret is not set; website was not redeployed."
+            exit 0
+          fi
+          curl -fsS -X POST "$DEPLOY_HOOK_URL"
