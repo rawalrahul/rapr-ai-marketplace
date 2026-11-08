@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-08",
   "base_download_url": "/marketplace/packages",
   "items": [
     {
@@ -14557,6 +14557,76 @@
       "upstream_license": "MIT",
       "marketplace_kind": "Curated Public Repo",
       "license_scope": "This package curates public setup links, install commands, and agent instructions. It does not bundle or relicense the upstream project unless explicitly stated."
+    },
+    {
+      "slug": "agent-desktop",
+      "name": "Agent Desktop",
+      "description": "Computer use for AI agents: see and operate macOS, Windows, and Linux desktop apps through the OS accessibility tree with ref-based JSON snapshots.",
+      "long_description": "# Agent Desktop\n\nComputer use for AI agents from Vercel Labs. agent-desktop reads the accessibility tree of desktop apps on macOS, Windows, and Linux and returns it as JSON, with a ref for every element an agent can act on. No screenshots or pixel matching, and no model inside: the observe, act, and verify loop runs in your agent.\n\n## What you can do\n\n- **Ref-based snapshots**: Read any app's UI as JSON with qualified refs like `@s8f3k2p9:e8`.\n- **Act headlessly**: Click, type, set values, toggle, select, expand, and scroll through accessibility APIs without moving the pointer or stealing focus.\n- **Dense apps**: Map with `snapshot --skeleton`, then drill into one region with `--root`.\n- **Apps and windows**: Launch, close, focus, move, resize, minimize, and maximize windows.\n- **Clipboard and notifications**: Read and set the clipboard; list, dismiss, and act on notifications.\n- **MCP server**: `agent-desktop mcp` exposes every command as an MCP tool over stdio.\n- **Safe retries**: Every action reports a delivery disposition so agents know when a retry is safe.\n\n## Prerequisites\n\n```bash\nnpm install -g agent-desktop\nagent-desktop status\nagent-desktop permissions --guide   # macOS Accessibility grant\n```\n\nRequires macOS 13+, Windows 10 1809+, or Ubuntu 24.04+ (X11 or Wayland).\n\n## Example Requests\n\n- \"Use agent-desktop to open Notes and create a new note titled Groceries.\"\n- \"Snapshot the Settings app and tell me whether Bluetooth is on.\"\n- \"Fill in this form in the desktop app and verify each field after typing.\"\n- \"Set up agent-desktop as an MCP server for this agent.\"\n\nSnapshots and screenshots can contain private desktop content; keep them out of public logs.",
+      "category": "skill",
+      "emoji": "🖥️",
+      "author": "Vercel Labs / RAPR AI",
+      "version": "1.0.0",
+      "min_app_version": "2.0.0",
+      "github_url": "https://github.com/vercel-labs/agent-desktop",
+      "tags": [
+        "computer-use",
+        "desktop-automation",
+        "accessibility",
+        "ai-agent",
+        "mcp",
+        "rust"
+      ],
+      "featured": true,
+      "pricing": "free",
+      "pricing_note": "Free & Open Source",
+      "created_at": "2026-11-08",
+      "updated_at": "2026-11-08",
+      "download_url": "/marketplace/packages/agent-desktop-1.0.0.raprpkg",
+      "file_size": "4.0 KB",
+      "keywords": [
+        "agent-desktop",
+        "computer use",
+        "desktop automation",
+        "gui automation",
+        "accessibility tree",
+        "ax api",
+        "ui automation",
+        "at-spi",
+        "macos",
+        "windows",
+        "linux",
+        "snapshot",
+        "refs",
+        "mcp",
+        "clipboard",
+        "notifications",
+        "rust",
+        "vercel"
+      ],
+      "setup": null,
+      "install_commands": [
+        {
+          "cmd": "npm install -g agent-desktop",
+          "label": "Install agent-desktop CLI globally",
+          "check_cmd": "agent-desktop version"
+        },
+        {
+          "cmd": "agent-desktop permissions --guide",
+          "label": "Grant accessibility permissions (macOS)",
+          "check_cmd": "agent-desktop status"
+        }
+      ],
+      "auth_info": {
+        "required": false,
+        "command": null,
+        "description": "No account or API key needed. macOS requires granting Accessibility permission to the terminal or host app; run `agent-desktop permissions --guide`."
+      },
+      "purpose_category": "Browser & Desktop Automation",
+      "license": "MIT",
+      "upstream_license": "Apache-2.0",
+      "marketplace_kind": "CLI Connector",
+      "license_scope": "This package contains RAPR-authored CLI usage guidance, install commands, and agent instructions. It does not bundle the upstream CLI binary or C library."
     }
   ]
 }
